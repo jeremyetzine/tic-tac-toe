@@ -1,3 +1,27 @@
-body {
-  background-color: lime;
+#container {
+  width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+.row1 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: inline-block;
+
+}
+
+.row2 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.row3 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: inline-block;
 }
