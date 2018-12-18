@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+  const players = {
+    playerOne: [],
+    playerTwo: [],
+  }
+
+  $(".playerOne").on('keypress', function () {
+    const usernameOne = $(this).val();
+    players.playerOne.push(usernameOne);
+  });
+
+  $(".playerTwo").on('keypress', function () {
+    const usernameTwo = $(this).val();
+    players.playerTwo.push(usernameTwo);
+  });
+
+
   let move = 1;
   let play = true;
 
@@ -10,9 +26,9 @@ $(document).ready(function() {
       move++;
       if (checkForWinner()!=-1 && checkForWinner()!="") {
 	      if (checkForWinner()==="X") {
-          alert("Player 1 wins!");
+          alert(`X wins!`);
         } else if (checkForWinner()==="O") {
-          alert("Player 2 wins!");
+          alert(`O wins!`);
         }
         play = false;
       }

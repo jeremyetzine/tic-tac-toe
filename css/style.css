@@ -78,3 +78,32 @@ input {
   border-radius: 3px;
   box-shadow: 0 0 10px #003326;
 }
+
+.submit {
+  margin-left: 1px;
+}
+
+.startButton {
+    font-family: 'Michroma', sans-serif;
+    height: 66px;
+    width: 100px;
+    font-size: 286%;
+    text-align: center;
+    padding: 0;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 0 180px 75px 22px;
+}
+
+.startButton:hover {
+  background-color: #00CC98;
+  color: #003326;
+}
+
+.oSymbol:hover {
+  color: #008C68;
+}
+
+.xSymbol:hover {
+  color: #008C68;
+}
