@@ -39,12 +39,12 @@ h1 {
   font-size: 365%;
   color: #003326;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-family: 'Michroma', sans-serif;
 }
 
 button {
-  margin-top: 5px;
+  margin: 0 20px 10px 20px;
   background-color: #003326;
   color: #00CC98;
   border: none;
@@ -53,11 +53,28 @@ button {
 }
 
 .homePageHeaders {
-    color: #003326;
-    font-family: 'Michroma', sans-serif;
+  color: #003326;
+  font-family: 'Michroma', sans-serif;
 }
 
 h4 {
   color: #003326;
-  font-family: 'Michroma', sans-serif;  
+  font-family: 'Michroma', sans-serif;
+}
+.xSymbol {
+  color: #003326;
+  font-size: 300px;
+  display: inline-block;
+}
+
+.oSymbol {
+  color: #003326;
+  font-size: 260px;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid #003326;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #003326;
 }

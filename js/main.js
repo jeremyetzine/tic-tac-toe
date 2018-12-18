@@ -55,7 +55,6 @@ $(document).ready(function() {
   }
 
 
-
   $('#restartButton').click(function(){
     location.reload(true);
   });
