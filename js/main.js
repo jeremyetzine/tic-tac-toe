@@ -34,8 +34,9 @@ $(document).ready(function() {
         }
         play = false;
       }
-      else if (checkForWinner() === -1)
+      else if (move >= 10 && checkForWinner() === -1) {
         alert("Its a draw!")
+      }
     }
   });
 
@@ -87,9 +88,7 @@ $(document).ready(function() {
     } else if ((space3Filled===space5Filled) && (space5Filled===space7Filled)) {
       return space7Filled;
     }
-    // no winner
-    return -1;
-
+      return -1;
   }
 
 
