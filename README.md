@@ -6,7 +6,8 @@ The aim of this project was to utilise the skills I have learned so far to creat
 The project allows for two people to play with custom usernames and announces the winner or draw.
 
 ## Live Demo
-[Click here](https://jeremyetzine.github.io/tic-tac-toe/) for the live site.
+<!-- [Click here](https://jeremyetzine.github.io/tic-tac-toe/) for the live site. -->
+Live sight coming soon 
 
 ## Technologies
 
