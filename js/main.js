@@ -6,11 +6,14 @@ $(document).ready(function() {
 
 
   $("#board tr td").click(function() {
-    if ($(this).text()==="" && play) {
-      if ((move%2)==1) { $(this).append("X"); }
-      else { $(this).append("O"); }
+    if ($(this).text() === "" && play) {
+      if ((move % 2) === 1) {
+        $(this).append("X");
+      } else {
+        $(this).append("O");
+      }
       move++;
-      if (checkForWinner()!=-1 && checkForWinner()!="") {
+      if (checkForWinner()!= -1 && checkForWinner() != "") {
 	      if (checkForWinner() === "X") {
           let usernameOne = $(".userOne").val()
           if (usernameOne === "") {
@@ -27,7 +30,7 @@ $(document).ready(function() {
         play = false;
       }
       else if (move >= 10 && checkForWinner() === -1) {
-        alert("Its a draw!");
+        $("p").text(`Its a draw!`);
       }
     }
   });
@@ -45,7 +48,7 @@ $(document).ready(function() {
   };
 
 
-  function checkForWinner() {
+  const checkForWinner = function() {
     const space1Filled = $(gameBoard.space1).text();
     const space2Filled = $(gameBoard.space2).text();
     const space3Filled = $(gameBoard.space3).text();
