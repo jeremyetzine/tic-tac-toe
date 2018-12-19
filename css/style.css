@@ -74,17 +74,13 @@ h4 {
 }
 
 input {
-  border: 1px solid #003326;
+  border: none;
   border-radius: 3px;
-  box-shadow: 0 0 10px #003326;
-}
-
-.inputOne {
-  margin-left: 1px;
-}
-
-.inputTwo {
-  margin-left: 1px;
+  font-size: 26px;
+  position: absolute;
+  right: 90px;
+  background-color: #003326;
+  color: #00CC98;
 }
 
 .startButton {
@@ -99,15 +95,21 @@ input {
     padding: 0 180px 75px 22px;
 }
 
-.startButton:hover {
+#restartButton:hover {
   background-color: #00CC98;
   color: #003326;
 }
 
-.oSymbol:hover {
-  color: #008C68;
+
+.userOne {
+  top: 195px;
 }
 
-.xSymbol:hover {
-  color: #008C68;
+.userTwo {
+  top: 265px;
+}
+
+::placeholder {
+  color: #004C39;
+  opacity: 1;
 }
