@@ -80,7 +80,7 @@ input {
 
 .userTwo {
   bottom: 470px;
-  left: 489px;
+  left: 428px;
 }
 
 ::placeholder {
@@ -89,7 +89,6 @@ input {
 }
 
 .modal {
-  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -99,7 +98,7 @@ input {
   background-color: rgba(0,0,0,0.4);
 }
 
-.modal-content {
+.endGameContent {
   background-color: black;
   color: #00CC98;
   margin: 15% auto;
@@ -120,4 +119,8 @@ input {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }

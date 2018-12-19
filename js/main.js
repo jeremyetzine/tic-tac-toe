@@ -20,17 +20,20 @@ $(document).ready(function() {
             usernameOne = "X";
           }
           $("p").text(`${usernameOne} wins!`);
+          modal.style.display = "block";
         } else if (checkForWinner() === "O") {
           let usernameTwo = $(".userTwo").val()
           if (usernameTwo === "") {
             usernameTwo = "O";
           }
           $("p").text(`${usernameTwo} wins!`);
+          modal.style.display = "block";
         }
         play = false;
-      }
-      else if (move >= 10 && checkForWinner() === -1) {
+      } else if (move >= 10 && checkForWinner() === -1) {
         $("p").text(`Its a draw!`);
+        modal.style.display = "block";
+        play = false;
       }
     }
   });
@@ -91,34 +94,20 @@ $(document).ready(function() {
     location.reload(true);
   });
 
-  // Get the modal
-  var modal = document.getElementById('myModal');
 
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
+  const $modal = $("#endGame");
+  const modal = $modal[0];
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+  const $span = $(".close");
+  const span = $span[0]
 
-  // When the user clicks on the button, open the modal
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-  // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
     modal.style.display = "none";
   }
 
-  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
       modal.style.display = "none";
     }
   }
-
-
-
-
-
 });
