@@ -1,21 +1,5 @@
 $(document).ready(function() {
 
-  // const players = {
-  //   playerOne: [],
-  //   playerTwo: [],
-  // }
-  //
-  // $(".submitOne").on('click', function () {
-  //   const usernameOne = $(inputOne).val();
-  //   players.playerOne.push(usernameOne);
-  // });
-  //
-  // $(".submitTwo").on('click', function () {
-  //   const usernameTwo = $(inputTwo).val();
-  //   players.playerTwo.push(usernameTwo);
-  // });
-
-
 
   let move = 1;
   let play = true;
@@ -28,14 +12,22 @@ $(document).ready(function() {
       move++;
       if (checkForWinner()!=-1 && checkForWinner()!="") {
 	      if (checkForWinner() === "X") {
-          alert(`X wins!`);
+          let usernameOne = $(".userOne").val()
+          if (usernameOne === "") {
+            usernameOne = "X";
+          }
+          alert(`${usernameOne} wins!`);
         } else if (checkForWinner() === "O") {
-          alert(`O wins!`);
+          let usernameTwo = $(".userTwo").val()
+          if (usernameTwo === "") {
+            usernameTwo = "O";
+          }
+          alert(`${usernameTwo} wins!`);
         }
         play = false;
       }
       else if (move >= 10 && checkForWinner() === -1) {
-        alert("Its a draw!")
+        alert("Its a draw!");
       }
     }
   });
@@ -50,7 +42,7 @@ $(document).ready(function() {
     space7: $("#board tr:nth-child(3) td:nth-child(1)"),
     space8: $("#board tr:nth-child(3) td:nth-child(2)"),
     space9: $("#board tr:nth-child(3) td:nth-child(3)")
-  }
+  };
 
 
   function checkForWinner() {
