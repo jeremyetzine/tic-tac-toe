@@ -79,7 +79,11 @@ input {
   box-shadow: 0 0 10px #003326;
 }
 
-.submit {
+.inputOne {
+  margin-left: 1px;
+}
+
+.inputTwo {
   margin-left: 1px;
 }
 
