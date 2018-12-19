@@ -58,18 +58,6 @@ button {
   box-shadow: 0 0 5px black;
 }
 
-.xSymbol {
-  color: #003326;
-  font-size: 300px;
-  display: inline-block;
-}
-
-.oSymbol {
-  color: #003326;
-  font-size: 260px;
-  display: inline-block;
-}
-
 input {
   border: none;
   border-radius: 3px;
@@ -92,10 +80,44 @@ input {
 
 .userTwo {
   bottom: 470px;
-  left: 428px;
+  left: 489px;
 }
 
 ::placeholder {
   color: #004C39;
   opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%  ;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: black;
+  color: #00CC98;
+  margin: 15% auto;
+  border: 5px solid #00CC98;
+  width: 60%;
+  font-size: 250%;
+  padding-right: 10px;
+}
+
+.close {
+  color: #00CC98;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
