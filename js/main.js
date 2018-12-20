@@ -1,10 +1,11 @@
 $(document).ready(function() {
 
-
+  //set move counter
   let move = 1;
+
   let play = true;
 
-
+  // fill the board
   $("#board tr td").click(function() {
     if ($(this).text() === "" && play) {
       if ((move % 2) === 1) {
@@ -38,6 +39,7 @@ $(document).ready(function() {
     }
   });
 
+  // define game board
   const gameBoard = {
     space1: $("#board tr:nth-child(1) td:nth-child(1)"),
     space2: $("#board tr:nth-child(1) td:nth-child(2)"),
@@ -50,7 +52,7 @@ $(document).ready(function() {
     space9: $("#board tr:nth-child(3) td:nth-child(3)")
   };
 
-
+  // find a winner
   const checkForWinner = function() {
     const space1Filled = $(gameBoard.space1).text();
     const space2Filled = $(gameBoard.space2).text();
@@ -89,12 +91,12 @@ $(document).ready(function() {
       return -1;
   }
 
-
+  // reset button
   $("#restartButton").click(function(){
     location.reload(true);
   });
 
-
+  // end game screen
   const $modal = $("#endGame");
   const modal = $modal[0];
 
