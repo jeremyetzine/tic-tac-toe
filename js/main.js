@@ -3,6 +3,7 @@ $(document).ready(function() {
   //set move counter
   let move = 1;
 
+  // start and end the game
   let play = true;
 
   // function for playing the game
