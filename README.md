@@ -25,7 +25,7 @@ The aim of this project was to utilise the skills I have learned so far to creat
 - jQuery
 
 ## Bugs
-There is a bug where if a player wins in a certain way or attempts to lose in under 6 moves, the game can get confused and randomly award a winner and or end the game later than expected.
+There is a bug where if a player wins in a certain way or attempts to lose in a specific way in under 6 moves, the game will not register the end of the game properly which can lead to there being two "winners". After one more turn the game will end and a winner will be announced, usually whoever has the middle square.
 
 ## To-Do
 
