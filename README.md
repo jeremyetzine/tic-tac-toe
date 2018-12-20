@@ -7,7 +7,15 @@ The aim of this project was to utilise the skills I have learned so far to creat
 [Click here](https://jeremyetzine.github.io/tic-tac-toe/game.html) for the live site.
 
 ## What does it do?
-The project allows for two people to play tic tac toe by clicking on the squares where they want to put their O or X. They can use custom usernames if they like. The game can detect the end of the game and announces the winner or draw. There is also a reset button.s
+- Renders a game board in the browser
+- Switches turns between X and O (or whichever markers you select)
+- Visually displays which side won if a player gets three in a row or show a draw if neither wins
+- Includes separate HTML / CSS / JavaScript files
+- Includes a reset button
+- Uses Javascript for DOM manipulation
+- Allows players to select usernames and includes the usernames in the end game display
+- Use semantic markup for HTML and CSS (adhere to best practices)
+
 
 ## Technologies
 
