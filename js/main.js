@@ -115,7 +115,8 @@ $(document).ready(function() {
 
   // bye bye button
   $("#boom").click(function() {
-    $("body").css('display', 'none');
-    alert("Goodbye")
+    $("body").css("display", "none");
+    $("body").css("background-color", "red");
+    alert("Goodbye.")
   });
 });
