@@ -65,27 +65,27 @@ $(document).ready(function() {
     const space9Filled = $(gameBoard.space9).text();
 
     // check rows
-    if ((space1Filled===space2Filled) && (space2Filled===space3Filled)) {
+    if ((space1Filled === space2Filled) && (space2Filled === space3Filled)) {
       return space3Filled;
-    } else if ((space4Filled===space5Filled) && (space5Filled===space6Filled)) {
+    } else if ((space4Filled === space5Filled) && (space5Filled === space6Filled)) {
       return space6Filled;
-    } else if ((space7Filled===space8Filled) && (space8Filled===space9Filled)) {
+    } else if ((space7Filled === space8Filled) && (space8Filled === space9Filled)) {
       return space9Filled;
     }
 
     // check columns
-    if ((space1Filled===space4Filled) && (space4Filled===space7Filled)) {
+    if ((space1Filled === space4Filled) && (space4Filled === space7Filled)) {
       return space7Filled;
-    } else if ((space2Filled===space5Filled) && (space5Filled===space8Filled)) {
+    } else if ((space2Filled === space5Filled) && (space5Filled === space8Filled)) {
       return space8Filled;
-    } else if ((space3Filled===space6Filled) && (space6Filled===space9Filled)) {
+    } else if ((space3Filled === space6Filled) && (space6Filled === space9Filled)) {
       return space9Filled;
     }
 
     // check diagonals
-    if ((space1Filled===space5Filled) && (space5Filled===space9Filled)) {
+    if ((space1Filled === space5Filled) && (space5Filled === space9Filled)) {
       return space9Filled;
-    } else if ((space3Filled===space5Filled) && (space5Filled===space7Filled)) {
+    } else if ((space3Filled === space5Filled) && (space5Filled === space7Filled)) {
       return space7Filled;
     }
       return -1;
@@ -101,15 +101,21 @@ $(document).ready(function() {
   const modal = $modal[0];
 
   const $span = $(".close");
-  const span = $span[0]
+  const span = $span[0];
 
   span.onclick = function() {
-    modal.style.display = "none";
-  }
+    modal.style.display = "none"
+  };
 
   window.onclick = function(event) {
     if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  }
+      modal.style.display = "none"
+    };
+  };
+
+  // bye bye button
+  $("#boom").click(function() {
+    $("body").css('display', 'none');
+    alert("Goodbye")
+  });
 });

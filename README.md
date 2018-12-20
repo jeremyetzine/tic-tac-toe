@@ -34,3 +34,6 @@ There is a bug where if a player wins in a certain way or attempts to lose in un
 - Add ai
 - Fix the bug
 - Size control for devices of all sizes - phones etc
+
+## Fun
+Boom button that gets rid of the game!
