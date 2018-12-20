@@ -119,3 +119,8 @@ input {
 .hidden {
   display: none;
 }
+
+#boom:hover {
+  background-color: red;
+  color: black;
+}
