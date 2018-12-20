@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   let play = true;
 
-  // fill the board
+  // function for playing the game
   $("#board tr td").click(function() {
     if ($(this).text() === "" && play) {
       if ((move % 2) === 1) {
